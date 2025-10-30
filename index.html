@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek - Video Editor | Crafting Stories Frame by Frame</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">VIVEK</h1>
+            <p class="hero-tagline fade-in-delay">Crafting Stories Frame by Frame</p>
+            <div class="hero-buttons fade-in-delay-2">
+                <a href="#portfolio" class="btn btn-primary">Watch My Reel</a>
+                <a href="#contact" class="btn btn-secondary">Hire Me</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">VIVEK</a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">I believe every video tells a story, and my job is to bring that story to life with precision, emotion, and cinematic flair. With years of experience crafting visuals that resonate, I turn raw footage into compelling narratives that captivate audiences.</p>
+                    <p class="about-philosophy">Every cut matters. Every frame counts. I approach editing not just as a technical craft, but as an art form—balancing rhythm, emotion, and visual storytelling to create videos that leave a lasting impact.</p>
+                </div>
+                <div class="about-tools">
+                    <h3 class="tools-title">Tools I Master</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <div class="tool-icon">🎬</div>
+                            <p>Adobe Premiere Pro</p>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-icon">✨</div>
+                            <p>After Effects</p>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-icon">🎨</div>
+                            <p>DaVinci Resolve</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-service="1">
+                    <div class="service-icon">🎞️</div>
+                    <h3 class="service-title">Video Editing</h3>
+                    <p class="service-description">Precision cuts and seamless transitions that bring your vision to life with cinematic flow.</p>
+                </div>
+                <div class="service-card" data-service="2">
+                    <div class="service-icon">🎨</div>
+                    <h3 class="service-title">Color Grading</h3>
+                    <p class="service-description">Transform your footage with professional color grading that sets the mood and elevates the aesthetic.</p>
+                </div>
+                <div class="service-card" data-service="3">
+                    <div class="service-icon">🔊</div>
+                    <h3 class="service-title">Sound Design</h3>
+                    <p class="service-description">Immersive audio experiences that complement visuals and enhance emotional impact.</p>
+                </div>
+                <div class="service-card" data-service="4">
+                    <div class="service-icon">⚡</div>
+                    <h3 class="service-title">Motion Graphics</h3>
+                    <p class="service-description">Dynamic animations and graphics that add polish and professionalism to your content.</p>
+                </div>
+                <div class="service-card" data-service="5">
+                    <div class="service-icon">🎯</div>
+                    <h3 class="service-title">Creative Direction</h3>
+                    <p class="service-description">Strategic vision and creative guidance to ensure your project delivers maximum impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="music">Music Video</button>
+                <button class="filter-btn" data-filter="documentary">Documentary</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="portfolio-thumbnail">
+                        <img src="assets/portfolio/project-1.jpg" alt="Project 1">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Brand Launch Campaign</h3>
+                            <a href="#" class="btn-watch">Watch Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="music">
+                    <div class="portfolio-thumbnail">
+                        <img src="assets/portfolio/project-2.jpg" alt="Project 2">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Indie Music Video</h3>
+                            <a href="#" class="btn-watch">Watch Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="documentary">
+                    <div class="portfolio-thumbnail">
+                        <img src="assets/portfolio/project-3.jpg" alt="Project 3">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Urban Stories Documentary</h3>
+                            <a href="#" class="btn-watch">Watch Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="portfolio-thumbnail">
+                        <img src="assets/portfolio/project-4.jpg" alt="Project 4">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Tech Product Showcase</h3>
+                            <a href="#" class="btn-watch">Watch Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="social">
+                    <div class="portfolio-thumbnail">
+                        <img src="assets/portfolio/project-5.jpg" alt="Project 5">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Social Media Campaign</h3>
+                            <a href="#" class="btn-watch">Watch Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="music">
+                    <div class="portfolio-thumbnail">
+                        <img src="assets/portfolio/project-6.jpg" alt="Project 6">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Electronic Music Visual</h3>
+                            <a href="#" class="btn-watch">Watch Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="documentary">
+                    <div class="portfolio-thumbnail">
+                        <img src="assets/portfolio/project-7.jpg" alt="Project 7">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Nature Documentary</h3>
+                            <a href="#" class="btn-watch">Watch Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="social">
+                    <div class="portfolio-thumbnail">
+                        <img src="assets/portfolio/project-8.jpg" alt="Project 8">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Instagram Reel Series</h3>
+                            <a href="#" class="btn-watch">Watch Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="portfolio-thumbnail">
+                        <img src="assets/portfolio/project-9.jpg" alt="Project 9">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Fashion Brand Film</h3>
+                            <a href="#" class="btn-watch">Watch Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"Vivek transformed our rough footage into a stunning visual masterpiece. His attention to detail and understanding of storytelling is unmatched. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Sarah Mitchell</p>
+                        <p class="author-title">Marketing Director, TechCorp</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"Working with Vivek was an absolute pleasure. He brought creative ideas to the table and delivered beyond our expectations. The final product was cinematic gold."</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">James Rodriguez</p>
+                        <p class="author-title">Music Producer</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"Professional, creative, and incredibly talented. Vivek understood our brand vision perfectly and created content that truly resonates with our audience."</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Priya Sharma</p>
+                        <p class="author-title">Founder, Creative Studios</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Create Together</h2>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                </form>
+                <div class="contact-social">
+                    <h3 class="social-title">Follow My Work</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com/vivek" target="_blank" class="social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://youtube.com/@vivek" target="_blank" class="social-link" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="https://linkedin.com/in/vivek" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Vivek. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
